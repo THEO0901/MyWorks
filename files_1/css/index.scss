@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+// 全局设置
+$orange: #f1af21;
+$green: #339c8b;
+$red: #d1444d;
+
+%bc{background-color: #fff;}
+%top{height: 340px; margin-bottom: 20px;position: relative;padding: 12px 16px 30px;}
+%mid{height: 230px; margin-bottom: 24px;position: relative;padding: 30px 16px 40px;} 
+%flag{width: 110px; height: 42px; color: #fff; font-size: 18px; line-height: 34px; text-align: center; font-weight: normal;}
+%list{display: block; color: #000; font-size: 14px; font-weight: bold; text-indent: 20px; background-position: 5px 11px;background-repeat: no-repeat;}
+%more{display: block; width: 26px; height: 20px; position: absolute;}
+%title{font-size: 20px; margin-bottom: 16px; text-indent: 5px;}
+%text-over{white-space:nowrap; text-overflow:ellipsis; overflow: hidden;}
+
+
+// 左部分
+.left{
+	width: 320px;
+	float: left;
+
+	.left-top{
+		@extend %top;
+		@extend %bc;
+
+		h1{
+			@extend %flag;
+			float: left;
+			background: url(../img/icon/orange_h1.png)no-repeat left top;
+		}
+		#news-time{
+			color: #606060;
+			font-size: 10px;
+			float: right;
+			margin-top: 26px;
+		}
+		#news-text{
+			margin-top: 42px;
+			margin-bottom: 8px;
+			height: 100px;
+			border-bottom: 1px dashed #606060;
+
+			a{	
+				display: block;
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 44px;
+				text-align: center;
+				color: #000;
+
+				&:hover{color: $orange;}
+			}
+			div{
+				text-indent: 28px;
+				font-size: 14px;
+				line-height: 18px;
+				height: 54px;
+				overflow: hidden;
+			}
+		}
+		.left-more{
+			@extend %more;
+			background: url(../img/icon/orange_more.png);
+			left: 270px;
+			top: 370px;
+		}
+	}
+	.left-mid{
+		@extend %mid;
+		@extend %bc;
+		border-top: 4px solid $orange;
+
+		h3{
+			@extend %title;
+			color: $orange;
+		}
+		.left-more{
+			@extend %more;
+			background: url(../img/icon/orange_more.png);
+			left: 270px;
+			top: 288px;
+		}
+	}
+	.left-bot{
+		height: 70px;
+		background-color: $orange;
+
+		a{	
+			display: block;
+			float: left;
+			height: 34px;
+			line-height: 34px;
+			width: 320px;
+			margin-top: 18px;
+			background: url(../img/icon/mail1_index.png) no-repeat 70px top; 
+			font-size: 18px;
+			color: #fff;
+			text-indent: 125px;
+		}
+	}
+	.left-list{
+		line-height: 28px;
+
+		a{
+			@extend %list;
+			@extend %text-over;
+			width: 270px;
+			background-image: url(../img/icon/orange_point.png);
+
+			&:hover{color: $orange;}
+		}
+	}
+}
+
+// 中部分
+.mid{
+	width: 490px;
+	float: left;
+	margin: 0 20px;
+
+	.mid-top{
+		@extend %top;
+		@extend %bc; 
+
+		h1{
+			@extend %flag;
+			float: left;
+			margin: 0 14px;
+			background: url(../img/icon/green_h1.png)no-repeat left top;
+		}
+		// banner开始
+		#banner{
+			width: 430px;
+			height: 285px;
+			margin: 54px 14px 0;
+			overflow: hidden;
+    		position:relative;
+
+    		.banner-img{
+    			position: absolute;
+    			left: 0;
+    			top: 0;
+				// 每减430，则过一张图片，第一张left为0，第五张为-1720
+
+    			li{
+    				float: left;
+    			}
+    			img{
+    				width: 430px;
+    				height: 285px;
+    			}
+    		}
+    		.banner-num{
+				position: absolute;
+    			left: 175px;
+				top: 265px;
+				width: 80px;
+
+    			li{
+    				float: left;
+    				margin: 0 4px;
+
+    				a{	
+    					width: 8px;
+    					height: 8px;
+    					display: block;
+    					background: url(../img/icon/banner_point.png) no-repeat left top;
+    				}
+    			}
+    			.banner-on{
+    				a{
+    					background: url(../img/icon/banner_point_on.png) no-repeat left top;
+    				}
+    			}
+    		}			
+		}
+		// banner结束
+		.mid-more{
+			@extend %more;
+			background: url(../img/icon/green_more.png);
+			left: 440px;
+			top: 370px;
+		}	
+	}
+	.mid-mid{
+		@extend %mid;
+		@extend %bc;
+		border-top: 4px solid $green;
+
+		h3{
+			@extend %title;
+			color: $green;
+		}
+		.mid-more{
+			@extend %more;
+			background: url(../img/icon/green_more.png);
+			left: 440px;
+			top: 288px;
+		}
+		.mid-list{
+			line-height: 28px;
+
+			a{
+				@extend %list;
+				@extend %text-over;
+				width: 390px;
+				float: left;
+				background-image: url(../img/icon/green_point.png);
+
+				&:hover{color: $green;}
+			}
+			span{
+				color: #a3a3a3;
+				float: right;
+			}
+		}		
+	}
+	.mid-bot{
+		height: 50px;
+		background-color: $green;
+		padding: 10px 0;
+		
+		span{
+			float: left;
+			display: block;
+			width: 42px;
+			height: 42px;
+			margin-left: 90px;
+			margin-top: 4px;
+			background: url(../img/icon/link_index.png)no-repeat ;
+		}
+		a{	
+			display: block;
+			color: #fff;
+			font-size: 16px;
+			line-height: 25px;
+			text-indent: 25px;
+		}
+	}
+}
+
+// 右部分
+.right{
+	width: 320px;
+	float: right;
+
+	.right-top{
+		@extend %top;
+		@extend %bc; 
+		
+		h1{
+			@extend %flag;
+			float: left;
+			background: url(../img/icon/red_h1.png)no-repeat left top;
+		}
+		// 日程表开始
+		#calendar{
+			height:285px;
+			margin-top: 54px;
+			overflow: hidden;
+			position:relative;
+			
+			.calendar-box{
+				height: 750px;
+				width: 288px;
+				position: absolute;
+				top: 0px;
+				// 每减75，则过一栏，第一栏left为0，第十栏为-675
+
+				.calendar-item{
+					height: 50px;
+					padding: 12px 0;
+					border-bottom: 1px dashed #606060;
+					
+					.calendar-num{
+						width: 60px;
+						height: 50px;
+						float: left;
+						background-color: #e8e8e8;
+						text-align: center;
+
+						h4{
+							color: $red;
+							font-size: 26px;
+							line-height: 50px;
+						}
+					}
+					.calendar-title{
+						width: 210px;
+						float: right;
+						font-size: 14px;
+						font-weight: bold;
+						line-height: 25px;
+
+						a{
+							display: block;
+							height: 44px;
+							width: 200px;
+							overflow: hidden;
+							color: #000;
+
+							&:hover{
+								color: $red;
+							}
+						}	
+					}
+				}
+			}
+		}
+		// 日程表结束
+		.right-more{
+			@extend %more;
+			background: url(../img/icon/red_more.png);
+			left: 270px;
+			top: 370px;
+		}
+	}
+	.right-mid{
+		@extend %mid;
+		@extend %bc;
+		border-top: 4px solid $red;
+
+		h3{
+			@extend %title;
+			color: $red;
+		}
+		.right-more{
+			@extend %more;
+			background: url(../img/icon/red_more.png);
+			left: 270px;
+			top: 288px;
+		}
+	}
+	.right-bot{
+		height: 70px;
+		background-color: $red;
+
+		a{	
+			display: block;
+			float: left;
+			height: 32px;
+			line-height: 32px;
+			width: 320px;
+			margin-top: 19px;
+			background: url(../img/icon/mail2_index.png) no-repeat 70px top; 
+			font-size: 18px;
+			color: #fff;
+			text-indent: 125px;
+		}
+	}
+	.right-list{
+		line-height: 28px;
+
+		a{
+			@extend %list;
+			@extend %text-over;
+			width: 270px;
+			background-image: url(../img/icon/red_point.png);
+
+			&:hover{color: $red;}
+		}
+	}
+}

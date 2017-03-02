@@ -1,0 +1,100 @@
+.menu .menu-list a, .menu .menu-list-second a {
+  height: 49px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 50px; }
+
+.menu {
+  width: 260px;
+  float: left;
+  font-family: "youyuan"; }
+  .menu .menu-item {
+    display: none; }
+  .menu .menu-title {
+    height: 60px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 60px;
+    text-indent: 15px;
+    background-color: #1f7aaa; }
+    .menu .menu-title span {
+      display: block;
+      float: left;
+      width: 10px;
+      height: 60px;
+      margin-left: 15px;
+      background: url(../img/icon/white_point.png) no-repeat left 25px; }
+  .menu .menu-list {
+    background-color: #fff; }
+    .menu .menu-list a {
+      display: block;
+      text-indent: 15px;
+      font-size: 18px;
+      color: #1f7aaa; }
+      .menu .menu-list a:hover {
+        background-color: #e7e7e7;
+        font-weight: bold; }
+      .menu .menu-list a span {
+        display: block;
+        float: right;
+        width: 12px;
+        height: 6px;
+        margin: 22px 0;
+        margin-right: 20px;
+        background: url(../img/icon/list_down.png); }
+  .menu .menu-list-second {
+    display: none; }
+    .menu .menu-list-second a {
+      text-indent: 10px;
+      font-size: 14px;
+      color: #919191; }
+      .menu .menu-list-second a:hover {
+        background-color: #e7e7e7;
+        font-weight: bold; }
+    .menu .menu-list-second span {
+      float: left;
+      font-size: 14px;
+      color: #919191;
+      line-height: 50px;
+      text-indent: 35px; }
+  .menu .click {
+    background-color: #e7e7e7;
+    font-weight: bold; }
+  .menu .span {
+    background: url(../img/icon/list_up.png) !important; }
+
+.text {
+  width: 838px;
+  min-height: 780px;
+  float: right;
+  padding: 0 24px;
+  background-color: #fff; }
+  .text .bread {
+    float: right;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #848484; }
+    .text .bread a {
+      margin: 0 4px;
+      color: #848484; }
+  .text .text-head {
+    margin: 70px 0 20px;
+    text-align: center; }
+    .text .text-head h1 {
+      color: #1f7aaa;
+      font-size: 24px;
+      font-weight: normal; }
+    .text .text-head .text-info {
+      margin-top: 36px;
+      font-size: 14px;
+      color: #acacac; }
+  .text .text-body {
+    margin-bottom: 36px;
+    font-family: "youyuan"; }
+    .text .text-body p {
+      font-size: 14px;
+      line-height: 24px;
+      text-indent: 32px;
+      margin: 30px 40px 0; }
+
+/*# sourceMappingURL=content.css.map */

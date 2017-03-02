@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+// 全局设置
+*{padding: 0;margin: 0;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+body{overflow-x:hidden;overflow-y:scroll}
+body{background-color: #e2e0e4;font-family: "Microsoft Yahei";min-width: 1170px;}
+// 顶部背景
+.header{
+	width: 100%;
+	margin: 0 auto;
+
+	.top{
+		width: 100%;
+		height: 362px;
+		display: block;
+	}
+	.nav{
+		height: 48px;
+		line-height: 48px;
+		background-color: #1f7aaa;
+
+		ul{
+			width: 1170px;
+			margin: 0 auto;
+		}
+		li{
+			float: left;
+			width: 130px;
+			height: 48px;
+
+			span{
+				display: block;
+				float: right;
+				width: 10px;
+				height: 6px;
+				margin-top: 22px;
+				margin-right: 12px;
+				background: url(../img/icon/nav_span.png) no-repeat left top;
+			}
+		}
+		.nav-act{
+			font-weight: bold;
+			background-color: #146c9a;
+
+			span{
+				width: 12px;
+				height: 7px;
+				margin-top: 21px;
+				margin-right: 11px;
+				background: url(../img/icon/nav_span_act.png) no-repeat left top;
+			}
+		}
+	}
+	.drop-down{
+		// display: none;
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+		
+		ul{
+			width: 190px;
+			// background-color: rgba(13,98,143,0.6);
+			background:rgba(13,98,143,0.6) none repeat scroll 0 0 !important;
+			filter:Alpha(opacity=60);
+			background:#0d628f;
+
+			li{
+				height: 30px;
+				line-height: 30px;
+				filter:Alpha(opacity=100);
+				
+				&:hover{
+				background-color: #fff;
+
+					a{
+						color: #3d8cb5;
+					}
+				}
+			}
+		}
+	}
+	a{	
+		margin-left: 25px;
+		font-family: "YouYuan";
+		font-size: 18px;
+
+		&:hover,&:link,&:visited,&:active{
+			color: #fff;
+		}
+	}
+// 下拉菜单定位
+	@for $i from 1 through 8 {
+		#box-#{$i} {
+			display: none;
+			position: absolute;
+			z-index:100;
+			left: 130px * $i;
+		}
+	}
+}
+
+
+// 内容部分
+.content{
+	width: 1170px;
+	margin: 24px auto 20px;
+
+	overflow: hidden;
+
+	&:after{
+		clear: both;
+		content:'.';
+		display:block;
+		width: 0;
+		height: 0;
+		visibility:hidden;
+	}
+}
+
+
+// 版权
+.footer{
+	width: 100%;
+	height: 80px;
+	background-color: #399ace;
+	padding-top: 20px;
+
+	p{
+		text-align: center;
+		font-size: 16px;
+		line-height: 32px;
+		color: #fff;
+	}
+}
+
+// 其他

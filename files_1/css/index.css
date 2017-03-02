@@ -1,0 +1,273 @@
+.left .left-top, .left .left-mid, .mid .mid-top, .mid .mid-mid, .right .right-top, .right .right-mid {
+  background-color: #fff; }
+
+.left .left-top, .mid .mid-top, .right .right-top {
+  height: 340px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 12px 16px 30px; }
+
+.left .left-mid, .mid .mid-mid, .right .right-mid {
+  height: 230px;
+  margin-bottom: 24px;
+  position: relative;
+  padding: 30px 16px 40px; }
+
+.left .left-top h1, .mid .mid-top h1, .right .right-top h1 {
+  width: 110px;
+  height: 42px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  font-weight: normal; }
+
+.left .left-list a, .mid .mid-mid .mid-list a, .right .right-list a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  text-indent: 20px;
+  background-position: 5px 11px;
+  background-repeat: no-repeat; }
+
+.left .left-top .left-more, .left .left-mid .left-more, .mid .mid-top .mid-more, .mid .mid-mid .mid-more, .right .right-top .right-more, .right .right-mid .right-more {
+  display: block;
+  width: 26px;
+  height: 20px;
+  position: absolute; }
+
+.left .left-mid h3, .mid .mid-mid h3, .right .right-mid h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-indent: 5px; }
+
+.left .left-list a, .mid .mid-mid .mid-list a, .right .right-list a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.left {
+  width: 320px;
+  float: left; }
+  .left .left-top h1 {
+    float: left;
+    background: url(../img/icon/orange_h1.png) no-repeat left top; }
+  .left .left-top #news-time {
+    color: #606060;
+    font-size: 10px;
+    float: right;
+    margin-top: 26px; }
+  .left .left-top #news-text {
+    margin-top: 42px;
+    margin-bottom: 8px;
+    height: 100px;
+    border-bottom: 1px dashed #606060; }
+    .left .left-top #news-text a {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 44px;
+      text-align: center;
+      color: #000; }
+      .left .left-top #news-text a:hover {
+        color: #f1af21; }
+    .left .left-top #news-text div {
+      text-indent: 28px;
+      font-size: 14px;
+      line-height: 18px;
+      height: 54px;
+      overflow: hidden; }
+  .left .left-top .left-more {
+    background: url(../img/icon/orange_more.png);
+    left: 270px;
+    top: 370px; }
+  .left .left-mid {
+    border-top: 4px solid #f1af21; }
+    .left .left-mid h3 {
+      color: #f1af21; }
+    .left .left-mid .left-more {
+      background: url(../img/icon/orange_more.png);
+      left: 270px;
+      top: 288px; }
+  .left .left-bot {
+    height: 70px;
+    background-color: #f1af21; }
+    .left .left-bot a {
+      display: block;
+      float: left;
+      height: 34px;
+      line-height: 34px;
+      width: 320px;
+      margin-top: 18px;
+      background: url(../img/icon/mail1_index.png) no-repeat 70px top;
+      font-size: 18px;
+      color: #fff;
+      text-indent: 125px; }
+  .left .left-list {
+    line-height: 28px; }
+    .left .left-list a {
+      width: 270px;
+      background-image: url(../img/icon/orange_point.png); }
+      .left .left-list a:hover {
+        color: #f1af21; }
+
+.mid {
+  width: 490px;
+  float: left;
+  margin: 0 20px; }
+  .mid .mid-top h1 {
+    float: left;
+    margin: 0 14px;
+    background: url(../img/icon/green_h1.png) no-repeat left top; }
+  .mid .mid-top #banner {
+    width: 430px;
+    height: 285px;
+    margin: 54px 14px 0;
+    overflow: hidden;
+    position: relative; }
+    .mid .mid-top #banner .banner-img {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .mid .mid-top #banner .banner-img li {
+        float: left; }
+      .mid .mid-top #banner .banner-img img {
+        width: 430px;
+        height: 285px; }
+    .mid .mid-top #banner .banner-num {
+      position: absolute;
+      left: 175px;
+      top: 265px;
+      width: 80px; }
+      .mid .mid-top #banner .banner-num li {
+        float: left;
+        margin: 0 4px; }
+        .mid .mid-top #banner .banner-num li a {
+          width: 8px;
+          height: 8px;
+          display: block;
+          background: url(../img/icon/banner_point.png) no-repeat left top; }
+      .mid .mid-top #banner .banner-num .banner-on a {
+        background: url(../img/icon/banner_point_on.png) no-repeat left top; }
+  .mid .mid-top .mid-more {
+    background: url(../img/icon/green_more.png);
+    left: 440px;
+    top: 370px; }
+  .mid .mid-mid {
+    border-top: 4px solid #339c8b; }
+    .mid .mid-mid h3 {
+      color: #339c8b; }
+    .mid .mid-mid .mid-more {
+      background: url(../img/icon/green_more.png);
+      left: 440px;
+      top: 288px; }
+    .mid .mid-mid .mid-list {
+      line-height: 28px; }
+      .mid .mid-mid .mid-list a {
+        width: 390px;
+        float: left;
+        background-image: url(../img/icon/green_point.png); }
+        .mid .mid-mid .mid-list a:hover {
+          color: #339c8b; }
+      .mid .mid-mid .mid-list span {
+        color: #a3a3a3;
+        float: right; }
+  .mid .mid-bot {
+    height: 50px;
+    background-color: #339c8b;
+    padding: 10px 0; }
+    .mid .mid-bot span {
+      float: left;
+      display: block;
+      width: 42px;
+      height: 42px;
+      margin-left: 90px;
+      margin-top: 4px;
+      background: url(../img/icon/link_index.png) no-repeat; }
+    .mid .mid-bot a {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      line-height: 25px;
+      text-indent: 25px; }
+
+.right {
+  width: 320px;
+  float: right; }
+  .right .right-top h1 {
+    float: left;
+    background: url(../img/icon/red_h1.png) no-repeat left top; }
+  .right .right-top #calendar {
+    height: 285px;
+    margin-top: 54px;
+    overflow: hidden;
+    position: relative; }
+    .right .right-top #calendar .calendar-box {
+      height: 750px;
+      width: 288px;
+      position: absolute;
+      top: 0px; }
+      .right .right-top #calendar .calendar-box .calendar-item {
+        height: 50px;
+        padding: 12px 0;
+        border-bottom: 1px dashed #606060; }
+        .right .right-top #calendar .calendar-box .calendar-item .calendar-num {
+          width: 60px;
+          height: 50px;
+          float: left;
+          background-color: #e8e8e8;
+          text-align: center; }
+          .right .right-top #calendar .calendar-box .calendar-item .calendar-num h4 {
+            color: #d1444d;
+            font-size: 26px;
+            line-height: 50px; }
+        .right .right-top #calendar .calendar-box .calendar-item .calendar-title {
+          width: 210px;
+          float: right;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 25px; }
+          .right .right-top #calendar .calendar-box .calendar-item .calendar-title a {
+            display: block;
+            height: 44px;
+            width: 200px;
+            overflow: hidden;
+            color: #000; }
+            .right .right-top #calendar .calendar-box .calendar-item .calendar-title a:hover {
+              color: #d1444d; }
+  .right .right-top .right-more {
+    background: url(../img/icon/red_more.png);
+    left: 270px;
+    top: 370px; }
+  .right .right-mid {
+    border-top: 4px solid #d1444d; }
+    .right .right-mid h3 {
+      color: #d1444d; }
+    .right .right-mid .right-more {
+      background: url(../img/icon/red_more.png);
+      left: 270px;
+      top: 288px; }
+  .right .right-bot {
+    height: 70px;
+    background-color: #d1444d; }
+    .right .right-bot a {
+      display: block;
+      float: left;
+      height: 32px;
+      line-height: 32px;
+      width: 320px;
+      margin-top: 19px;
+      background: url(../img/icon/mail2_index.png) no-repeat 70px top;
+      font-size: 18px;
+      color: #fff;
+      text-indent: 125px; }
+  .right .right-list {
+    line-height: 28px; }
+    .right .right-list a {
+      width: 270px;
+      background-image: url(../img/icon/red_point.png); }
+      .right .right-list a:hover {
+        color: #d1444d; }
+
+/*# sourceMappingURL=index.css.map */
